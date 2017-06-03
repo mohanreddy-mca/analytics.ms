@@ -1,0 +1,4 @@
+FROM java:7
+EXPOSE 9005:9005
+ADD /target/analytics.ms-0.1.0.jar analytics.ms-0.1.0.jar
+ENTRYPOINT ["java", "-jar", "analytics.ms-0.1.0.jar"]
